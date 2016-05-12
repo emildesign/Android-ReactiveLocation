@@ -74,7 +74,7 @@ public class MainActivity extends ActionBarActivity {
 
         final LocationRequest locationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
-                .setNumUpdates(5)
+                .setNumUpdates(150)
                 .setInterval(100);
         locationUpdatesObservable = locationProvider
                 .checkLocationSettings(
